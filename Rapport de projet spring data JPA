@@ -1,0 +1,37 @@
+    KHALID KHATIB 4IIRG1 EMSI MOULAY YOUSSEF                                                                 
+                                                            Rapport de Projet Spring Boot - Gestion de Produits
+
+Introduction
+
+Dans le cadre de ce projet, j'ai entrepris le développement d'une application Spring Boot visant à gérer les produits, en utilisant les technologies Spring Data JPA, Lombok, Spring Web, Spring Boot DevTools, et une base de données H2, avec une migration ultérieure vers MySQL. L'objectif principal de cette initiative était de mettre en place les opérations CRUD (Create, Read, Update, Delete) pour l'entité Product.
+
+Étapes de Développement
+
+    Création du Projet Spring Boot :
+    J'ai initié la création du projet Spring Boot en utilisant Spring Initializr, en spécifiant les dépendances requises, notamment Spring Data JPA, Lombok, Spring Web, Spring Boot DevTools et H2 Database.
+
+    Création de l'Entité JPA Product :
+    J'ai conçu la classe Product, annotée avec @Entity pour la persistance JPA. Cette entité a été configurée avec des champs tels que id, name et price.
+
+    Configuration du DataSource :
+    Pour la configuration de la source de données, j'ai modifié le fichier application.properties, en initiant avec une base de données H2 en mémoire pour les tests.
+
+    Création de l'Interface ProductRepository :
+    J'ai élaboré l'interface ProductRepository étendant JpaRepository<Product, Long>, qui offre des méthodes prêtes à l'emploi pour les opérations CRUD sur l'entité Product.
+
+    Tests de l'Application :
+    J'ai mis en place un contrôleur REST pour expérimenter les opérations CRUD sur les produits. J'ai réalisé ces tests à l'aide de Postman, en validant les réponses pour assurer le bon fonctionnement des opérations CRUD.
+
+    Migration vers MySQL :
+    La migration vers MySQL a été une étape cruciale. J'ai ajusté la configuration du DataSource dans application.properties pour migrer vers une base de données MySQL, en veillant à configurer le dialecte Hibernate adapté à MySQL.
+
+Observations et Conclusion
+
+    La création d'une application Spring Boot avec Spring Data JPA a simplifié la gestion des opérations CRUD sur les entités.
+    L'utilisation de Lombok a considérablement réduit la quantité de code boilerplate, facilitant ainsi le développement.
+    Les outils de développement Spring Boot ont rendu le processus de développement plus agile grâce au rechargement automatique des modifications.
+    La migration vers MySQL s'est déroulée sans encombre, démontrant la flexibilité de Spring Boot pour s'adapter à différents systèmes de gestion de bases de données.
+
+En conclusion, ce projet illustre les capacités de Spring Boot dans le développement d'applications robustes et évolutives. L'utilisation de Spring Data JPA simplifie l'accès aux données et les opérations CRUD, tandis que Lombok permet de réduire la quantité de code redondant. La migration vers MySQL met en évidence la polyvalence de Spring Boot pour s'adapter à divers environnements de bases de données.
+
+Ce rapport résume le processus de développement du projet Spring Boot pour la gestion des produits. J'ai documenté les étapes suivies, les configurations effectuées, ainsi que mes observations pour une meilleure compréhension du projet.
